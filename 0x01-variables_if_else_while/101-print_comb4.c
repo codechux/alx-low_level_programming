@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - printing three digits numbers
+ * main - print combination of three digits
  *
- * Return 0 (success)
+ * Return: zero
  */
 
 int main(void)
