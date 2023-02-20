@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description - printing numberz
- * Return 0 (success)
+ * main - prints combination of digits
+ *
+ * Return: zero
  */
 
 int main(void)
@@ -17,7 +17,9 @@ int main(void)
 		{
 			putchar(num + '0');
 			putchar(num1 + '0');
-			if ((num != 8) && (num1 != 9))
+			if ((num == 8) && (num1 == 9))
+				;
+			else
 			{
 				putchar(',');
 				putchar(' ');
