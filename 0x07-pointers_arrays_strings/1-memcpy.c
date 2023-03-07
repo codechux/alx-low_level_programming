@@ -8,6 +8,8 @@
  * @src: memory area copying from
  *
  * @n: how many bytes to copy
+ *
+ * Return: @dest the copied mem.
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
