@@ -1,26 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strpbrk - bytes
- * @s: pointer to char
- * @accept: pointer to char
- * Return: NULL
+ * _strstr - a function that locates a substring
+ * @haystack: locate a substring
+ * @needle: substring to locate
+ *
+ * Return: pointer to the beginning of the located substring,
+ * or NULL, if substring isn't found
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int i;
+	char *h = haystack;
+	char *n = needle;
 
-	while (*s)
+	while (*h)
 	{
-		for (i = 0; accept[i]; i++)
+		n = needle;
+		h = haystack;
+		while (*n)
 		{
-			if (*s == accept[i])
+			if (*h == *n)
 			{
-				return (s);
+				n++;
+				h++;
 			}
+			else
+				break;
 		}
-		s++;
+		if (*n == '\0')
+			return (haystack);
+		haystack++;
 	}
-	return (NULL);
+	return (0);
 }
