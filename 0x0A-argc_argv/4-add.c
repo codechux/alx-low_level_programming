@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-i
+
 /**
  * main - prints the addition of two arguments
  * @argc: counts the arguments
