@@ -2,9 +2,9 @@
 
 /**
  * _strcat - joins two strings
- * @scr: string to copy
+ * @src: string to copy
  * @dest: copied string
- * Rsturn: pointer to result address
+ * Return: pointer to result address
  */
 
 char *_strcat(char *dest, char *src)
