@@ -3,6 +3,7 @@
 /**
  * print_dlistint - function to prints elements
  * dlistint - node in the list
+ * @h: variable
  * Return: number of elements
  */
 
